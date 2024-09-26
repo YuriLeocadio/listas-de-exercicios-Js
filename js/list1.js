@@ -76,61 +76,61 @@ function convertFahrenheitToCelsius() {
 }
 
 function mainMenu() {
-    console.log("Escolha um exercício para rodar:")
-    console.log("1 - Soma entre dois números")
-    console.log("2 - Olá, usuário")
-    console.log("3 - Converter reais para dólares")
-    console.log("4 - Antecessor e sucessor")
-    console.log("5 - Calcular valor do terreno")
-    console.log("6 - Consumo médio do veículo")
-    console.log("7 - Média aritmética das notas")
-    console.log("8 - Converter Fahrenheit para Celsius")
-    console.log("0 - Sair")
+    while (true) {
+        console.log("Escolha um exercício para rodar:")
+        console.log("1 - Soma entre dois números")
+        console.log("2 - Olá, usuário")
+        console.log("3 - Converter reais para dólares")
+        console.log("4 - Antecessor e sucessor")
+        console.log("5 - Calcular valor do terreno")
+        console.log("6 - Consumo médio do veículo")
+        console.log("7 - Média aritmética das notas")
+        console.log("8 - Converter Fahrenheit para Celsius")
+        console.log("0 - Sair")
 
-    let choice = parseInt(prompt("Digite sua opção: "))
+        let choice = parseInt(prompt("Digite sua opção: "))
 
-    switch (choice) {
-        case 1:
-            sum()
-            break;
+        switch (choice) {
+            case 1:
+                sum()
+                break;
 
-        case 2:
-            user()
-            break;
+            case 2:
+                user()
+                break;
 
-        case 3:
-            convertRealToDollar()
-            break;
+            case 3:
+                convertRealToDollar()
+                break;
 
-        case 4:
-            findPredecessorAndSuccessor()
-            break;
+            case 4:
+                findPredecessorAndSuccessor()
+                break;
 
-        case 5:
-            calculateLandValue()
-            break;
+            case 5:
+                calculateLandValue()
+                break;
 
-        case 6:
-            calculateAverageConsumption()
-            break;
+            case 6:
+                calculateAverageConsumption()
+                break;
 
-        case 7:
-            calculateAverageGrade()
-            break;
+            case 7:
+                calculateAverageGrade()
+                break;
 
-        case 8:
-            convertFahrenheitToCelsius()
-            break;
+            case 8:
+                convertFahrenheitToCelsius()
+                break;
 
-        case 0:
-            console.log("Saindo...")
-            return;
+            case 0:
+                console.log("Saindo...")
+                return;
 
-        default:
-            console.log("Opção inválida. Tente novamente.")
+            default:
+                console.log("Opção inválida. Tente novamente.")
+        }
     }
-
-    mainMenu();
 }
 
 mainMenu();

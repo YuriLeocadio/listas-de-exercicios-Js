@@ -152,61 +152,61 @@ function quizGame() {
 }
 
 function mainMenu() {
-    console.log("Escolha um exercício para executar:")
-    console.log("1 - Par, Ímpar ou Zero")
-    console.log("2 - Encontrar maior número")
-    console.log("3 - Encaminhamento de fila")
-    console.log("4 - Verificação de idade para evento")
-    console.log("5 - Verificar login e senha")
-    console.log("6 - Avaliação de nota do aluno")
-    console.log("7 - Verificação de divisibilidade")
-    console.log("8 - Jogo de perguntas e respostas")
-    console.log("0 - Sair")
+    while (true) {
+        console.log("Escolha um exercício para executar:")
+        console.log("1 - Par, Ímpar ou Zero")
+        console.log("2 - Encontrar maior número")
+        console.log("3 - Encaminhamento de fila")
+        console.log("4 - Verificação de idade para evento")
+        console.log("5 - Verificar login e senha")
+        console.log("6 - Avaliação de nota do aluno")
+        console.log("7 - Verificação de divisibilidade")
+        console.log("8 - Jogo de perguntas e respostas")
+        console.log("0 - Sair")
 
-    let choice = parseInt(prompt("Digite sua opção: "))
+        let choice = parseInt(prompt("Digite sua opção: "))
 
-    switch (choice) {
-        case 1:
-            evenOrOddOrZero()
-            break
+        switch (choice) {
+            case 1:
+                evenOrOddOrZero()
+                break
 
-        case 2:
-            findLargerNumber()
-            break
+            case 2:
+                findLargerNumber()
+                break
 
-        case 3:
-            queueAssignment()
-            break
+            case 3:
+                queueAssignment()
+                break
 
-        case 4:
-            checkAgeForEvent()
-            break
+            case 4:
+                checkAgeForEvent()
+                break
 
-        case 5:
-            verifyLoginAndPassword()
-            break
+            case 5:
+                verifyLoginAndPassword()
+                break
 
-        case 6:
-            studentGrade()
-            break
+            case 6:
+                studentGrade()
+                break
 
-        case 7:
-            divisibilityCheck()
-            break
+            case 7:
+                divisibilityCheck()
+                break
 
-        case 8:
-            quizGame()
-            break
+            case 8:
+                quizGame()
+                break
 
-        case 0:
-            console.log("Saindo...")
-            return
+            case 0:
+                console.log("Saindo...")
+                return
 
-        default:
-            console.log("Opção inválida. Tente novamente.")
+            default:
+                console.log("Opção inválida. Tente novamente.")
+        }
     }
-
-    mainMenu();
 }
 
 mainMenu();
